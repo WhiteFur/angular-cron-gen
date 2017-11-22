@@ -69,7 +69,7 @@ export class CronGenService {
             seconds: this.range(60),
             hours: this.range(1, 24),
             monthDays: this.range(1,32),
-            monthDaysWithLasts: ['1W', ...[...new Array(31)].map((val, idx) => `${idx + 1}`), 'LW', 'L']
+            monthDaysWithLasts: [...[...new Array(31)].map((val, idx) => `${idx + 1}`) ]
         };
     }
 

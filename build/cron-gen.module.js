@@ -750,9 +750,9 @@ var CronGenService = function () {
                 seconds: this.range(60),
                 hours: this.range(1, 24),
                 monthDays: this.range(1, 32),
-                monthDaysWithLasts: ['1W'].concat(toConsumableArray([].concat(toConsumableArray(new Array(31))).map(function (val, idx) {
+                monthDaysWithLasts: [].concat(toConsumableArray([].concat(toConsumableArray(new Array(31))).map(function (val, idx) {
                     return '' + (idx + 1);
-                })), ['LW', 'L'])
+                })))
             };
         }
     }]);
