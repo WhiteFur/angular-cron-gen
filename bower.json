@@ -1,5 +1,5 @@
 {
-  "name": "angular-cron-gen",
+  "name": "angular-node-cron",
   "main": [
     "src/cron-gen.html",
     "src/cron-gen.js",
