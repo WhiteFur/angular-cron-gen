@@ -486,7 +486,7 @@ var CronGenComponent = function () {
                 hideDailyTab: false,
                 hideWeeklyTab: false,
                 hideMonthlyTab: false,
-                hideYearlyTab: false,
+                hideYearlyTab: true,
                 hideAdvancedTab: true,
                 use24HourTime: false,
                 hideSeconds: false
