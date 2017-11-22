@@ -319,56 +319,6 @@
                                     hide-seconds="$ctrl.parsedOptions.hideSeconds">
                             </cron-gen-time-select>
                         </div>
-                        <div class="well well-small">
-                            <input type="radio"
-                                   value="specificWeekDay"
-                                   ng-disabled="$ctrl.ngDisabled"
-                                   ng-change="$ctrl.regenerateCron()"
-                                   ng-model="$ctrl.state.monthly.subTab"
-                                   ng-class="$ctrl.state.formRadioClass"
-                                   name="monthly-radio">
-                            On the
-                            <select class="day-order-in-month"
-                                    name="monthlySpecificWeekDayMonthWeek"
-                                    ng-disabled="$ctrl.ngDisabled || $ctrl.activeTab !== 'monthly' || $ctrl.state.monthly.subTab !== 'specificWeekDay'"
-                                    ng-change="$ctrl.regenerateCron()"
-                                    ng-model="$ctrl.state.monthly.specificWeekDay.monthWeek"
-                                    ng-required="$ctrl.activeTab === 'monthly' && $ctrl.state.monthly.subTab === 'specificWeekDay'"
-                                    ng-options="monthWeek as $ctrl.monthWeekDisplay(monthWeek) for monthWeek in $ctrl.selectOptions.monthWeeks"
-                                    ng-class="$ctrl.parsedOptions.formSelectClass">
-                            </select>
-                            <select class="week-days"
-                                    name="monthlySpecificWeekDayDay"
-                                    ng-disabled="$ctrl.ngDisabled || $ctrl.activeTab !== 'monthly' || $ctrl.state.monthly.subTab !== 'specificWeekDay'"
-                                    ng-change="$ctrl.regenerateCron()"
-                                    ng-model="$ctrl.state.monthly.specificWeekDay.day"
-                                    ng-required="$ctrl.activeTab === 'monthly' && $ctrl.state.monthly.subTab === 'specificWeekDay'"
-                                    ng-options="day as $ctrl.dayDisplay(day) for day in $ctrl.selectOptions.days"
-                                    ng-class="$ctrl.parsedOptions.formSelectClass">
-                            </select>
-                            of every
-                            <select class="months-small"
-                                    name="monthlySpecificWeekDayMonths"
-                                    ng-disabled="$ctrl.ngDisabled || $ctrl.activeTab !== 'monthly' || $ctrl.state.monthly.subTab !== 'specificWeekDay'"
-                                    ng-change="$ctrl.regenerateCron()"
-                                    ng-model="$ctrl.state.monthly.specificWeekDay.months"
-                                    ng-required="$ctrl.activeTab === 'monthly' && $ctrl.state.monthly.subTab === 'specificWeekDay'"
-                                    ng-options="month as month for month in $ctrl.selectOptions.months"
-                                    ng-class="$ctrl.parsedOptions.formSelectClass">
-                            </select>
-                            month(s) at
-                            <cron-gen-time-select
-                                    is-disabled="$ctrl.ngDisabled || $ctrl.activeTab !== 'monthly' || $ctrl.state.monthly.subTab !== 'specificWeekDay'"
-                                    on-change="$ctrl.regenerateCron()"
-                                    name-prefix="monthlySpecificWeekDay"
-                                    is-required="$ctrl.activeTab === 'monthly' && $ctrl.state.monthly.subTab === 'specificWeekDay'"
-                                    model="$ctrl.state.monthly.specificWeekDay"
-                                    select-class="$ctrl.parsedOptions.formSelectClass"
-                                    use-24-hour-time="$ctrl.parsedOptions.use24HourTime"
-                                    hide-seconds="$ctrl.parsedOptions.hideSeconds">
-                            </cron-gen-time-select>
-                        </div>
-
                     </div>
                     <div class="tab-pane"
                          ng-show="!$ctrl.parsedOptions.hideYearlyTab"
