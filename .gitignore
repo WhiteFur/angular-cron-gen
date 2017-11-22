@@ -3,3 +3,12 @@ test/coverage
 bower_components
 *.iml
 .idea/
+
+.DS_Store
+.sass-cache/
+.vscode/
+npm-debug.log
+
+*.swp
+.eslintrc
+yarn.lock
