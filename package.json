@@ -1,6 +1,6 @@
 {
   "name": "angular-node-cron",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A node-cron expression generator for AngularJS.",
   "main": "index.js",
   "style": "build/cron-gen.min.css",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/WhiteFur/angular-cron-gen.git"
+    "url": "http://bitbucket.gamasys.com.tw:7990/scm/gpms/angular-node-cron.git"
   },
   "keywords": [
     "angular",
@@ -21,9 +21,9 @@
   "author": "whitefurlin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vincentjames501/angular-cron-gen/issues"
+    "url": "http://bitbucket.gamasys.com.tw:7990/scm/gpms/angular-node-cron.git"
   },
-  "homepage": "https://github.com/WhiteFur/angular-cron-gen",
+  "homepage": "http://bitbucket.gamasys.com.tw:7990/scm/gpms/angular-node-cron.git",
   "devDependencies": {
     "add-stream": "^1.0.0",
     "babel-plugin-external-helpers": "^6.18.0",
